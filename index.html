@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>♡</title>
+</head>
+<body>
+	<div>
+    		<h1>Solo Te Queria Decir :3</h1>
+     		<p id="demo"></p>
+	</div>
+</body>
+</html>
+<script>
+    const elemento = document.getElementById("demo")
+    veces = 0;
+    const tiempo = setInterval(
+        function () { elemento.innerHTML += " BAÑATE ♡ ";
+        veces++;
+        if(veces == 500)
+            clearInterval(tiempo)
+        }, 20);
+</script>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+    body{
+        font-family:'Josefin Sans';
+        background-color:black;
+	  padding: 20px;
+    }
+    h1{
+        color: white;
+        text-align: center;
+    }
+    p{
+        font-family:cursive;
+        color: white;
+	  text-align: justify;
+    }
+    div{
+	margin: 20px auto;
+    }
+</style>

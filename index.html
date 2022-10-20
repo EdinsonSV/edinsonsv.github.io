@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="favicon.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edinson</title>
+    <!-- Estilos -->
+    <script src="https://kit.fontawesome.com/afe9b53f6a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class='header' id='header'>
+        
+        <nav class='nav' data-aos="fade-down">
+            <button class='nav__toggle'><i class='bi bi-list'></i></button>
+            <ul class='nav__menu' id='nav__menu'>
+
+                <li class='menu__item'>
+                    <a href='#home' class='menu__link'>
+                        <i class='bi bi-house'></i> Inicio
+                    </a>
+                </li>
+
+                <li class='menu__item'>
+                    <a href='#about' class='menu__link'>
+                        <i class='bi bi-person'></i> Sobre
+                    </a>
+                </li>
+
+                <li class='menu__item'>
+                    <a href='#portfolio' class='menu__link'>
+                        <i class='bi bi-images'></i> Portafolio
+                    </a>
+                </li>
+
+                <li class='menu__item'>
+                    <a href='#contact' class='menu__link'>
+                        <i class='bi bi-send'></i> Contacto
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+    <!-- Home -->
+    <div class='home' id='home'>
+
+        <div class="container-switch">
+            <label class='switch'>
+                <input type='checkbox' checked />
+                <span class='slider'></span>
+            </label>
+        </div>
+
+        <div class='home__presentacion' data-aos="fade-down">
+
+            <div class='presentacion__saludo'>
+                <h2 class='saludo1'>Hola, mi nombre es</h2>
+                <h1 class='saludo__nombre'>Edinson Santos</h1>
+                <h2 class='saludo2'>soy desarrollar web.</h2>
+            </div>
+
+            <div class='presentacion__img'>
+                <img loading="lazy" class='img__home' src='Fondo.png' alt='' />
+            </div>
+
+        </div>
+
+    </div>
+    <!-- About -->
+    <div class="about" id="about">
+
+        <div class="about__title-container" data-aos="fade-down"> 
+            <h1 class="about__title">Sobre</h1>
+            <div class="titleBefore"></div>
+        </div>
+
+        <div class="about__services" id="services" data-aos="fade-up">
+
+                <div class="services__card">
+                    <div class="icon-card">
+                        <a href="#" class="laptop"><i class="bi bi-laptop"></i></a>
+                        <a href="#" class="phone"><i class="bi bi-phone"></i></a>
+                    </div>
+                    <h2>Adaptable</h2>
+                    <div class="card-text">
+                        <p>Mis diseños funcionarán en cualquier dispositivo, grande o pequeño.</p>
+                    </div>
+                </div>
+    
+                <div class="services__card">
+                    <a href="#" class="icon-card"><i class="bi bi-lightbulb"></i></a>
+                    <h2>Creativo</h2>
+                    <div class="card-text">
+                        <p>Un buen y atractivo diseño web te ayuda a mantener a tus clientes, que es la cara digital de tu negocio.</p>
+                    </div>
+                </div>
+
+                <div class="services__card">
+                    <a href="#" class="icon-card"><i class="fa-solid fa-rocket"></i></a>
+                    <h2>Dinámica</h2>
+                    <div class="card-text">
+                        <p>Los sitios web no tienen que ser estáticos, me encanta hacer que las páginas cobren vida.</p>
+                    </div>
+                </div>
+
+        </div>
+
+        <div class="about__partes">
+            <div class="about__parte1" data-aos="fade-right">
+
+                <div class='perfil__container'>
+                    <img loading="lazy" src='Yo.png' alt="Perfil" class="perfil" />
+                </div>
+
+                <div class="perfil__description">
+                    <h1>Desarrollador web</h1>
+                    <p>
+                        Practicante Front-end con mucho interés en ingresar al mercado laboral para aplicar mis conocimientos de una manera práctica. Tengo una gran pasión por los efectos de interfaz de usuario, las animaciones y la creación de experiencias de usuario intuitivas y dinámicas.
+                    </p>
+                    <a href="./Edinson Santos Vilchez Curriculum Vitae.pdf" target="_blank" class="cv-vitae">
+                        Descargar CV <i class="bi bi-file-earmark-arrow-down"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="about__parte2" data-aos="fade-left">
+                <div class="about__lenguajes">
+                    <div class="span-lenguajes">HTML</div>
+                    <div class="porcentaje">
+                        <div class="porcentaje-le" style="--porcentaje: 80%"></div><span
+                            class="span-porcentaje">80%</span>
+                    </div>
+                </div>
+                <div class="about__lenguajes">
+                    <div class="span-lenguajes">CSS</div>
+                    <div class="porcentaje">
+                        <div class="porcentaje-le" style="--porcentaje: 50%"></div><span
+                            class="span-porcentaje">50%</span>
+                    </div>
+                </div>
+                <div class="about__lenguajes">
+                    <div class="span-lenguajes">JavaScript</div>
+                    <div class="porcentaje">
+                        <div class="porcentaje-le" style="--porcentaje: 40%"></div><span
+                            class="span-porcentaje">40%</span>
+                    </div>
+                </div>
+                <div class="about__lenguajes">
+                    <div class="span-lenguajes especial">Bootstrap</div>
+                    <div class="porcentaje">
+                        <div class="porcentaje-le" style="--porcentaje: 50%"></div><span
+                            class="span-porcentaje">50%</span>
+                    </div>
+                </div>
+                <div class="about__lenguajes">
+                    <div class="span-lenguajes">React</div>
+                    <div class="porcentaje">
+                        <div class="porcentaje-le" style="--porcentaje: 20%"></div><span
+                            class="span-porcentaje">20%</span>
+                    </div>
+                </div>
+                <div class="about__lenguajes">
+                    <div class="span-lenguajes">SASS</div>
+                    <div class="porcentaje">
+                        <div class="porcentaje-le" style="--porcentaje: 50%"></div><span
+                            class="span-porcentaje">50%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Portafolio -->
+    <div class="portfolio" id="portfolio">
+        <div class="portfolio__title-container" data-aos="fade-down"> 
+            <h1 class="portfolio__title">Portafolio</h1>
+            <div class="titleBefore"></div>
+        </div>
+        <div class="Contenedor__Portafolio">
+            <div class="portfolio__proyectos" data-aos="fade-up">
+                <div class="proyectos">
+                    <img loading="lazy" src="Calculadora.png" alt="Construyendo" class="proyecto proyecto-calculadora">
+                    <div>
+                        <a href="https://edinsonsv.github.io/Calculadora/" target="_blank"><span>Visitar</span></a>
+                    </div>
+                </div>
+                <div class="proyectos">
+                    <img loading="lazy" src="CRUD.png" alt="Construyendo" class="proyecto proyecto-crud">
+                    <div>
+                        <a href="https://edinsonsv.github.io/CRUD/" target="_blank"><span>Visitar</span></a>
+                    </div>
+                </div>
+                <div class="proyectos">
+                    <img loading="lazy" src="Dado3D.png" alt="Dado3D" class="proyecto proyecto-crud">
+                    <div>
+                        <a href="https://edinsonsv.github.io/Dado3D/" target="_blank"><span>Visitar</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="contact" id="contact">
+        <div class="contact__title-container" data-aos="zoom-in-up"> 
+            <h1 class="contact__title">Contacto</h1>
+            <div class="titleBefore"></div>
+        </div>
+        <div class="footer" data-aos="zoom-in-up">
+            <ul>
+
+                <li class="footer-link">
+                    <a href="https://www.facebook.com/profile.php?id=100074871559086" target="_blank" style="--footer-color: #385898; --footer-color-secondary: #22365d">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                </li>
+
+                <li class="footer-link">
+                    <a href="https://github.com/EdinsonSV" target="_blank" style="--footer-color: #242424; --footer-color-secondary: #000">
+                        <i class="bi bi-github"></i>
+                    </a>
+                </li>
+
+                <li class="footer-link">
+                    <a href="https://www.instagram.com/edinson_.sanvil/" target="_blank" style="--footer-color: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); --footer-color-secondary: #991a70">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <h2>Edinson Santos ©2022</h2>
+
+    </footer>
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            durations: 1000
+        });
+    </script>
+    <script type="text/javascript" src="header.js"></script>
+    <script type="text/javascript" src="home.js"></script>
+    <script type="text/javascript" src="about.js"></script>
+</body>
+
+</html>

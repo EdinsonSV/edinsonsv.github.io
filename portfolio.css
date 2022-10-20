@@ -1,0 +1,135 @@
+.portfolio{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh; 
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.portfolio__title-container{
+    color: inherit;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.portfolio__title{
+    font-size: 3em;
+    margin: 0;
+    animation-name: contactTitle;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+.portfolio .titleBefore{
+    width: 234.865px;
+    height: 4px;
+    background-color: #fff;
+    animation-name: contactBefore;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+
+@keyframes contactBefore {
+    0%{
+        opacity: 0;
+        transform: translateX(-550px);
+    }
+    100%{
+        opacity: 1;
+        transform:translateX(0);
+    }
+}
+
+@keyframes contactTitle {
+    0%{
+        opacity: 0;
+        transform:translateX(550px);
+    }
+    100%{
+        opacity: 1;
+        transform:translateX(0);
+    }
+}
+.Contenedor__Portafolio{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.portfolio__proyectos{
+    max-width: 720px;
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+    margin-bottom: 50px;
+    gap: 20px;
+}
+.proyectos .proyecto{
+    border: 1px solid #ffffff30;
+    border-radius: 5px;
+    width: 350px;
+    height: 180px;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.proyectos div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+/*     width: 350px;
+    transform:translateY(-180px);
+    background-color: #0000007a;
+    height: 180px; */
+}
+.proyectos div a{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #04c2c9;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 17px;
+    padding: 8px;
+    width: 130px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+.proyectos div a span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.proyectos div a span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.5s;
+}
+
+.proyectos div a:hover span {
+    padding-right: 15px;
+}
+
+.proyectos div a:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+@media screen and (max-width: 420px){
+    .proyectos .proyecto{
+        border: none;
+        width: 100%;
+        height: 180px;
+    }
+}
